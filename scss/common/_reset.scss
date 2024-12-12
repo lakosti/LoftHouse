@@ -1,0 +1,22 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// a:hover {
+//     text-decoration: none;
+// }
+ul,
+ol {
+  list-style: none;
+}

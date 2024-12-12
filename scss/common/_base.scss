@@ -1,0 +1,12 @@
+// Raleway  400 700
+// Playfair 700
+// roboto 300  light
+
+// підключити через імпорт
+
+body {
+  font-family: $font-primary;
+  background-color: $bg;
+  color: $text-color;
+  font-size: 16px;
+}
