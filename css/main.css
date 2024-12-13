@@ -1,3 +1,4 @@
+/* Reset and base styles  */
 * {
   padding: 0px;
   margin: 0px;
@@ -5,19 +6,105 @@
 }
 
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
+/* Links */
+a,
+a:link,
+a:visited {
   color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul,
-ol {
+ul li {
   list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
 }
 
 body {
@@ -27,6 +114,106 @@ body {
   font-size: 16px;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 74px;
   min-height: 840px;
+  background-image: linear-gradient(#242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url(../img/header/header-bg.jpg);
+}
+.header .logo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.header .logo-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.header .nav__list {
+  display: flex;
+  gap: 38px;
+}
+.header .nav__list-item {
+  position: relative;
+  transition: color 250ms ease-in-out;
+}
+.header .nav__list-item:hover {
+  color: #d4c14f;
+}
+.header .nav__list-item::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #d4c14f;
+  transition: width 250ms ease-in-out;
+}
+.header .nav__list-item:hover::after {
+  width: 100%;
+}
+.header__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #d4c14f;
+  line-height: 1.3;
+  margin-bottom: 80px;
+}
+.header__icon {
+  display: block;
+  margin: 0 auto;
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+.header__address {
+  margin: 0 auto;
+}
+.header__address-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 18px;
+  line-height: 1.7;
+  transition: all 250ms ease-in-out;
+}
+.header__address-link:hover {
+  color: #d4c14f;
+}
+.header__address .address-wrap {
+  display: flex;
+  gap: 98px;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }/*# sourceMappingURL=main.css.map */
