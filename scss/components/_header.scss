@@ -76,12 +76,12 @@
   }
   &__address {
     margin: 0 auto;
+    font-size: 18px; //один шрифт для всього контейнеру
     &-link {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 14px;
-      font-size: 18px;
       line-height: 1.7;
       transition: all 250ms ease-in-out;
       &:hover {

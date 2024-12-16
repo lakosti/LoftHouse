@@ -1,8 +1,11 @@
-// Raleway  400 700
-// Playfair 700
-// roboto 300  light
+// $font-primary: "Raleway", sans-serif;
+// $font-secondary: "Roboto", sans-serif;
+// $font-header: "Playfair Display", serif;
 
-// підключити через імпорт
+// $bg: #242b33;
+// $accent: #d4c14f;
+// $text-color: #fff;
+// $footer-bg: #2d343c;
 
 body {
   font-family: $font-primary;
@@ -17,4 +20,16 @@ body {
   max-width: 1140px; //1110 + 30px cause padding
   margin-left: auto;
   margin-right: auto;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
