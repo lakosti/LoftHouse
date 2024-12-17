@@ -1,29 +1,70 @@
 .benefits {
-  // .benefits__row
   &__row {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
     display: flex;
     justify-content: center;
     gap: 70px;
   }
-  // .benefits__item
   &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     width: 193px;
+    border: 1px solid transparent;
+    transition: all 250ms ease-in-out;
+    animation: shadow-effect 2s ease-in-out infinite;
+    // &:hover {
+    //   border-color: $accent;
+    //   box-shadow: 0px 4px 6px rgba(212, 193, 79, 0.4),
+    //     0px 1px 3px rgba(0, 0, 0, 0.1);
+    //   filter: drop-shadow(0px 4px 6px rgba(212, 193, 79, 0.6))
+    //     drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
+    //   animation: border-pulse 3s infinite;
+    // }
+    &:hover {
+      animation: none;
+    }
+    &:nth-child(2) {
+      animation-delay: 250ms;
+    }
+    &:nth-child(3) {
+      animation-delay: 500ms;
+    }
+    &:nth-child(4) {
+      animation-delay: 750ms;
+    }
   }
-  // .benefits__item-icon
+  @keyframes shadow-effect {
+    0%,
+    100% {
+      filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+    }
+    50% {
+      filter: drop-shadow(0px 4px 6px rgba(212, 193, 79, 0.6))
+        drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
+    }
+  }
+
+  //   @keyframes border-pulse {
+  //     0%,
+  //     50%,
+  //     100% {
+  //       border-color: $accent;
+  //     }
+  //     25%,
+  //     75% {
+  //       border-color: transparent;
+  //     }
+  //   }
+
   &__item-icon {
     margin-bottom: 53px;
+    transition: filter 250ms ease-in-out;
   }
-  // .benefits__item-text
+
   &__item-text {
     font-family: $font-secondary;
     font-size: 20px;
     font-weight: 300;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.35;
   }
 }

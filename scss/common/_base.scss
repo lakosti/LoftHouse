@@ -20,6 +20,9 @@ body {
   max-width: 1140px; //1110 + 30px cause padding
   margin-left: auto;
   margin-right: auto;
+  &--sm {
+    width: 892px; //to match the layout (824)
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -32,4 +35,7 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.none {
+  display: none !important;
 }
