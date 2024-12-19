@@ -12,6 +12,7 @@ body {
   background-color: $bg;
   color: $text-color;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -38,4 +39,11 @@ body {
 }
 .none {
   display: none !important;
+}
+.title {
+  font-weight: 700;
+  font-family: $font-title;
+  font-size: 36px;
+  line-height: 1.33;
+  color: $accent;
 }

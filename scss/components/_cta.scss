@@ -1,0 +1,90 @@
+.cta {
+  padding: 180px 0;
+  background: linear-gradient(
+      180deg,
+      $bg 10.42%,
+      rgba(36, 43, 51, 0) 50.52%,
+      #242b33 90.1%
+    ),
+    //фон на картинке (боковушки)
+    linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+    // оверлей
+    url("../img/cta/cta-bg.jpg");
+
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__text {
+    line-height: 1.5;
+
+    p + p {
+      margin-top: 1em;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // column-gap: 30px;
+    // row-gap: 35px;
+    gap: 35px 30px; //row column
+    align-items: center;
+  }
+}
+
+.form {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 540px;
+  //   column-gap: 30px;
+  //   row-gap: 35px;
+  //   justify-content: center;
+  //   align-items: center;
+  &__input {
+    height: 50px;
+    // width: 255px;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: $text-color;
+    line-height: 1.92;
+    transition: all 250ms ease-in-out;
+    &::placeholder {
+      text-align: center;
+      color: #bebebe;
+      font-size: 14px;
+      line-height: 1.92;
+    }
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  &__info {
+    // width: 255px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.3;
+    color: #e7e7e7;
+  }
+  &__btn {
+    height: 50px;
+    padding: 12px;
+    background-color: $accent;
+    color: $text-color;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.7;
+    transition: all 250ms ease-in-out;
+    &:hover {
+      background-color: $text-color;
+      color: $accent;
+    }
+  }
+}

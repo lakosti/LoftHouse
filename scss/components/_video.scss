@@ -1,0 +1,46 @@
+.video {
+  // .video__link
+  &__link {
+    position: relative;
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(36, 43, 51, 0.8); //оверлей
+      transition: all 250ms ease-in-out;
+    }
+    &:hover::before {
+      background: rgba(36, 43, 51, 0.6); //оверлей
+    }
+  }
+  // .video__icon
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: play-pulse 2s infinite;
+    .video__link:hover & {
+      animation: none;
+      filter: saturate(1.5);
+    }
+  }
+  @keyframes play-pulse {
+    0% {
+      width: 100px;
+    }
+    50% {
+      width: 110px;
+    }
+    100% {
+      width: 100px;
+    }
+  }
+  // .video__img
+  &__img {
+  }
+}

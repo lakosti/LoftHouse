@@ -2,17 +2,11 @@
   &__wrap {
     margin-bottom: 88px;
   }
-  &__title {
-    font-weight: 700;
-    font-family: $font-title;
-    font-size: 36px;
-    line-height: 1.33;
-    color: $accent;
-  }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 30px;
   }
 
@@ -59,7 +53,7 @@
     transition: all 250ms ease-in-out;
   }
   &__item:hover &__img {
-    transform: scale(1.02);
+    transform: scale(1.1);
     filter: contrast(110%) brightness(1.2) saturate(1.2);
   }
 

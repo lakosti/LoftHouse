@@ -83,9 +83,10 @@
           Residential complex <br />
           in the historical center
         </h1>
-        <svg class="header__icon" width="40" height="40">
-          <use href="./img/icons.svg#mouse" />
-        </svg>
+        <a href="#flats">
+          <svg class="header__icon" width="40" height="40">
+            <use href="./img/icons.svg#mouse" /></svg
+        ></a>
       </div>
 
       <div class="header__address">
@@ -150,10 +151,10 @@ Longitude	24.016671 -->
           </ul>
         </div>
       </section>
-      <section class="appartments">
+      <section id="flats" class="appartments">
         <div class="container">
           <div class="appartments__wrap">
-            <h2 class="appartments__title">Our apartments</h2>
+            <h2 class="title">Our apartments</h2>
           </div>
           <ul class="appartments__list">
             <li class="appartments__item">
@@ -197,6 +198,52 @@ Longitude	24.016671 -->
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container">
+          <div class="cta__title">
+            <h2 class="title">Want to take a look?</h2>
+          </div>
+          <div class="cta__wrap">
+            <p class="cta__text">
+              LoftHouse Residential Complex is a business-class project located
+              in the city center, on the Fontanka River Embankment, 10-15. The
+              complex offers its residents apartments ranging from 40 to 170 sq.
+              m. The building will consist of three sections, housing only 56
+              apartments in total.
+            </p>
+
+            <form class="form cta__form">
+              <input class="form__input" type="text" placeholder="Name" />
+              <input class="form__input" type="tel" placeholder="Phone" />
+
+              <p class="form__info">
+                *We do not share your data with anyone. <br />
+                And we do not save your number in a database.
+              </p>
+              <button class="form__btn" type="submit">Explore the area</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <h2 class="visually-hidden">Video about our appartments</h2>
+        <div class="container">
+          <a
+            class="video__link"
+            href="https://www.youtube.com/watch?v=3R7a-zRTTgg&ab_channel=BudCowmen"
+            target="_blank"
+          >
+            <svg class="video__icon" width="100" height="100">
+              <use href="./img/icons.svg#play" />
+            </svg>
+            <img
+              class="video__img"
+              src="./img/video/video_preview.jpg"
+              alt="Video preview"
+            />
+          </a>
         </div>
       </section>
     </main>
