@@ -13,17 +13,17 @@
       #242b33 92.19%
     ),
     url(../img/header/header-bg.jpg);
-  .logo {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    &-text {
-      text-transform: uppercase;
-      font-size: 12px;
-      line-height: 1.7;
-      // letter-spacing: 0.12em; //12%
-    }
-  }
+  // .logo {
+  //   display: flex;
+  //   flex-direction: column;
+  //   gap: 14px;
+  //   &-text {
+  //     text-transform: uppercase;
+  //     font-size: 12px;
+  //     line-height: 1.7;
+  //     // letter-spacing: 0.12em; //12%
+  //   }
+  // }
   &__top-row {
     display: flex;
     justify-content: space-between;

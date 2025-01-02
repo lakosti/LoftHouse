@@ -37,7 +37,7 @@
     <title>LoftHouse</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header none">
       <div class="header__top">
         <div class="container">
           <div class="header__top-row">
@@ -109,7 +109,7 @@ Longitude	24.016671 -->
       </div>
     </header>
     <main>
-      <section class="benefits">
+      <section class="benefits none">
         <div class="container container--sm">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits__row">
@@ -151,7 +151,7 @@ Longitude	24.016671 -->
           </ul>
         </div>
       </section>
-      <section id="flats" class="appartments">
+      <section id="flats" class="appartments none">
         <div class="container">
           <div class="appartments__wrap">
             <h2 class="title">Our apartments</h2>
@@ -200,7 +200,7 @@ Longitude	24.016671 -->
           </ul>
         </div>
       </section>
-      <section class="cta">
+      <section class="cta none">
         <div class="container">
           <div class="cta__title">
             <h2 class="title">Want to take a look?</h2>
@@ -215,19 +215,21 @@ Longitude	24.016671 -->
             </p>
 
             <form class="form cta__form">
-              <input class="form__input" type="text" placeholder="Name" />
-              <input class="form__input" type="tel" placeholder="Phone" />
+              <input class="form__input input" type="text" placeholder="Name" />
+              <input class="form__input input" type="tel" placeholder="Phone" />
 
-              <p class="form__info">
+              <p class="form__info privacy">
                 *We do not share your data with anyone. <br />
-                And we do not save your number in a database.
+                And we do not save your number.
               </p>
-              <button class="form__btn" type="submit">Explore the area</button>
+              <button class="form__btn btn" type="submit">
+                Explore the area
+              </button>
             </form>
           </div>
         </div>
       </section>
-      <section class="video">
+      <section class="video none">
         <h2 class="visually-hidden">Video about our appartments</h2>
         <div class="container">
           <a
@@ -246,7 +248,165 @@ Longitude	24.016671 -->
           </a>
         </div>
       </section>
+      <section class="map none">
+        <div class="container">
+          <h2 class="title map__title">Район на карте</h2>
+          <div class="map__block" id="location"></div>
+        </div>
+      </section>
+      <section class="feedback none">
+        <div class="container">
+          <h2 class="title feedback__title">Есть вопросы?</h2>
+          <form class="feedback__form">
+            <p class="feedback__info privacy">
+              *We do not share your data with anyone. <br />
+              And we do not save your number.
+            </p>
+
+            <input
+              class="feedback__input input"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="feedback__input input"
+              type="tel"
+              placeholder="Phone"
+            />
+            <button class="feedback__btn btn" type="submit">
+              Explore the area
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__row">
+          <a
+            class="footer__logo logo"
+            href="./index.html"
+            aria-label="Go to the main page"
+          >
+            <img
+              class="footer__logo-img"
+              src="./img/header/logo.svg"
+              width="137"
+              alt="Loft house logo"
+            />
+            <span class="footer__logo-text">Residential complex</span>
+          </a>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#about">About The Complex</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#area">Area</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#catalog">Apartment Catalog</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#mortgage">Mortgage</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#relocation"
+                  >Relocation And Moving</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#services">Service Offerings</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#sustainability"
+                  >Environmental Sustainability</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#investments"
+                  >Investment Opportunities</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#loyalty">Loyalty Program</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="footer__address">
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                Address:
+                <a
+                  class="footer__contact-link"
+                  href="#location"
+                  aria-label="See our location"
+                  >Mateyka st, 6, Lviv</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                Phone:
+                <a
+                  class="footer__contact-link"
+                  href="tel:+380964144155"
+                  aria-label="Call us at +380964144155"
+                  >+380 96 414 41 55</a
+                >
+              </li>
+              <li class="footer__contact-item">Sales: 10:00 AM - 8:00 PM</li>
+              <li class="footer__contact-item">
+                Email:
+                <a
+                  class="footer__contact-link footer-email"
+                  href="mailto:vip@lofthouse.com"
+                  aria-label="Send an email to vip@lofthouse.com"
+                  >vip@lofthouse.com</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#youtube">
+                  <svg class="footer__social-icon" width="25" height="20">
+                    <use href="./img/icons.svg#youtube" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#twitter">
+                  <svg class="footer__social-icon" width="25" height="20">
+                    <use href="./img/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#facebook">
+                  <svg class="footer__social-icon" width="25" height="20">
+                    <use href="./img/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#instagram">
+                  <svg class="footer__social-icon" width="25" height="20">
+                    <use href="./img/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
