@@ -11,13 +11,10 @@
   }
   &__logo {
     margin-top: -12px; // lifted up on 12 px
-    color: $text-color;
   }
   &__logo-img {
   }
   &__logo-text {
-  }
-  &__nav {
   }
   &__list {
     display: flex;
@@ -37,27 +34,6 @@
       color: rgba(255, 255, 255, 0.8);
     }
   }
-  &__address {
-  }
-  &__contact-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
-
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.05em;
-  }
-  &__contact-item {
-  }
-  &__contact-link {
-    color: $text-color;
-    transition: color 250ms ease-in-out;
-    &:hover {
-      color: rgba(255, 255, 255, 0.8);
-    }
-  }
   &__social-list {
     display: flex;
     align-items: center;
@@ -65,16 +41,20 @@
   }
   &__social-item {
     &:hover .footer__social-icon {
-      transform: translateY(-5px);
+      transform: translateY(-2px);
     }
   }
   &__social-link {
   }
   &__social-icon {
     transition: all 250ms ease-in-out;
+    fill: $text-color;
   }
 }
 .footer-email {
   font-weight: 700;
   color: $accent;
+}
+.adress-list {
+  margin-bottom: 20px;
 }

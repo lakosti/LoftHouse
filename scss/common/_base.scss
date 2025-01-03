@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  color: $text-color;
   &-text {
     text-transform: uppercase;
     font-size: 12px;

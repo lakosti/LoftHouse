@@ -1,4 +1,14 @@
 .appartments {
+  position: relative;
+  &::before {
+    content: "III";
+    right: calc(
+      50% + 555px
+    ); //від половини екрану + додаємо половину контейнеру
+    transform: translateX(50%); //і здвигаємо на половину своєї ширини
+    line-height: 1.2;
+    @include decor;
+  }
   &__wrap {
     margin-bottom: 88px;
   }
@@ -17,6 +27,7 @@
     overflow: hidden;
   }
   &__link {
+    color: $text-color;
     display: inline-block; // cause link is inline el
     &::before {
       position: absolute;

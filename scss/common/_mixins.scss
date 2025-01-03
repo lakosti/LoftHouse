@@ -1,0 +1,10 @@
+@mixin decor {
+  position: absolute;
+  top: 0;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 400px;
+  color: $text-color;
+  opacity: 0.02;
+}
