@@ -1,0 +1,10 @@
+.header__nav-btn {
+  display: none;
+
+  //   @media screen and (max-width: $tablet) {
+  //     display: block;
+  //   }
+  @include tablet {
+    display: block;
+  }
+}
