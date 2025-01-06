@@ -1,5 +1,8 @@
 .feedback {
   padding-bottom: 180px;
+  @include tablet {
+    padding-bottom: 100px;
+  }
   &__title {
     margin-bottom: 38px;
   }
@@ -7,16 +10,29 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-  }
-  &__wrapper {
+    @include tablet {
+      max-width: 600px;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+    }
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &__info {
     align-self: center;
+    @include tablet {
+      order: 4;
+    }
   }
 
   &__input {
   }
 
   &__btn {
+    @include tablet {
+      order: 3;
+    }
   }
 }

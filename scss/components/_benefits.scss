@@ -1,25 +1,35 @@
 .benefits {
   position: relative;
-
-  &::after {
-    content: "II";
-    left: calc(50% + 555px); //від половини екрану + додаємо половину контейнеру
-    transform: translateX(-50%); //і здвигаємо на половину своєї ширини
-    line-height: 1.3;
-    @include decor;
+  overflow: hidden;
+  @include desktop {
+    &::after {
+      content: "II";
+      left: calc(
+        50% + 555px
+      ); //від половини екрану + додаємо половину контейнеру
+      transform: translateX(-50%); //і здвигаємо на половину своєї ширини
+      line-height: 1.3;
+      @include decor;
+    }
   }
+
   &__row {
     padding: 120px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
   }
   &__item {
     text-align: center;
-    width: 193px;
+    // width: 143px;
+    flex-basis: calc(932px / 4 - 70px);
     border: 1px solid transparent;
     transition: all 250ms ease-in-out;
     animation: shadow-effect 2s ease-in-out infinite;
+    // &:first-child {
+    //   width: 193px;
+    // }
     &:hover {
       animation: none;
     }
@@ -47,6 +57,11 @@
   &__item-icon {
     margin-bottom: 53px;
     transition: filter 250ms ease-in-out;
+    @include tablet {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 30px;
+    }
   }
 
   &__item-text {
@@ -55,5 +70,8 @@
     font-weight: 300;
     text-align: center;
     line-height: 1.35;
+    @include tablet {
+      font-size: 16px;
+    }
   }
 }

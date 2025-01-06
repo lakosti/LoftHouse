@@ -1,5 +1,8 @@
 .cta {
   padding: 180px 0;
+  @include tablet {
+    padding: 100px 0;
+  }
   background: linear-gradient(
       180deg,
       $bg 10.42%,
@@ -19,6 +22,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__text {
@@ -31,22 +37,16 @@
   &__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr 1fr;
-    // column-gap: 30px;
-    // row-gap: 35px;
-    gap: 35px 30px; //row column
+    gap: 35px 30px;
     align-items: center;
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 15px 20px;
+    }
   }
 }
 
 .form {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   width: 540px;
-  //   column-gap: 30px;
-  //   row-gap: 35px;
-  //   justify-content: center;
-  //   align-items: center;
   &__input {
   }
   &__info {

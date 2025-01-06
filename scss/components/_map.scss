@@ -1,19 +1,28 @@
 .map {
   position: relative;
-  &::before {
-    @include decor;
-    content: "V";
-    top: 160px;
-    right: calc(
-      50% + 555px
-    ); //від половини екрану + додаємо половину контейнеру
-    transform: translateX(50%); //і здвигаємо на половину своєї ширини
-    z-index: -1;
-    line-height: 1.2;
-  }
   padding: 180px 0;
+  @include tablet {
+    padding: 100px 0;
+  }
+  @include desktop {
+    &::before {
+      @include decor;
+      content: "V";
+      top: 160px;
+      right: calc(
+        50% + 555px
+      ); //від половини екрану + додаємо половину контейнеру
+      transform: translateX(50%); //і здвигаємо на половину своєї ширини
+      z-index: -1;
+      line-height: 1.2;
+    }
+  }
+
   &__title {
     margin-bottom: 88px;
+    @include tablet {
+      margin-bottom: 40px;
+    }
   }
   &__block {
     height: 358px;
