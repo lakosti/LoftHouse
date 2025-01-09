@@ -223,7 +223,12 @@ Longitude	24.016671 -->
 
             <form class="form cta__form">
               <input class="form__input input" type="text" placeholder="Name" />
-              <input class="form__input input" type="tel" placeholder="Phone" />
+              <input
+                data-tel
+                class="form__input input"
+                type="tel"
+                placeholder="Phone"
+              />
 
               <p class="form__info privacy">
                 *We do not share your data with anyone. <br />
@@ -276,6 +281,7 @@ Longitude	24.016671 -->
               placeholder="Name"
             />
             <input
+              data-tel
               class="feedback__input input"
               type="tel"
               placeholder="Phone"
@@ -414,6 +420,8 @@ Longitude	24.016671 -->
         </div>
       </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js " type="module"></script>
+    <script src="./js/libs/phoneMask/mask.js " type="module"></script>
+    <script src="./js/libs/phoneMask/maskList.js " type="module"></script>
   </body>
 </html>

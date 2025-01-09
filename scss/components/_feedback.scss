@@ -24,6 +24,7 @@
     align-self: center;
     @include tablet {
       order: 4;
+      // grid-row: 3 / 4; //с 4 ряда по 5 - перестановка места / положения
     }
   }
 
@@ -31,8 +32,5 @@
   }
 
   &__btn {
-    @include tablet {
-      order: 3;
-    }
   }
 }
